@@ -2,7 +2,7 @@
 
 ## Overview
 
-The main game controller for a robot soccer demo built for a FIFA FanFest project at Humber Polytechnic. One ESP32-based LoR Core v3 board runs the whole show: the match state machine, goal scoring, an 827-LED spatial field display, UART audio cues, and a web scoreboard for the operator and the audience. The controller is the field/show controller only; it does not drive the robots. Version v4.65 is the event-ready baseline, documented by the formal handoff manual in `docs/`.
+The main game controller for a robot soccer demo built for a FIFA FanFest project at Humber Polytechnic. One ESP32-based LoR Core v3 board runs the whole show: the match state machine, goal scoring, an 827-LED spatial field display, UART audio cues, and a web scoreboard for the operator and the audience. The controller is the field/show controller only; it does not drive the robots. Version v4.65 is the event-ready baseline, documented by the formal handoff manual included in this repository.
 
 ## Features
 
@@ -28,7 +28,7 @@ The main game controller for a robot soccer demo built for a FIFA FanFest projec
 - Developed in PlatformIO with VS Code (Arduino framework for ESP32)
 - Libraries include FastLED, ESPAsyncWebServer / AsyncTCP, ArduinoOTA, and mDNS
 - The controller hosts the operator web UI and the audience scoreboard; network defaults moved from a standalone access point to router/station mode (mDNS `soccerbots.local`) in v4.32
-- Scoring parameters, pin maps, and the full event-day operating procedure are documented in the handoff manual in `docs/`
+- Scoring parameters, pin maps, and the full event-day operating procedure are documented in the handoff manual included in this repository
 
 ## File and version guide
 
@@ -38,7 +38,7 @@ The main game controller for a robot soccer demo built for a FIFA FanFest projec
 | `FIFA_RobotSoccer_DemoDay_Controller_v2_1.ino` | Full demo system: 827-LED field, four goal sensors, iPad scoreboard, LED safety rules |
 | `FIFA_RobotSoccer_DemoDay_Controller_v4_32.ino` | Adds interrupt-latched goal sensing and router/station networking |
 | `FIFA_RobotSoccer_DemoDay_Controller_v4_65.ino` | Latest version and event-ready baseline: show-control flow, operator/audience route split, PIN gate, demo lock |
-| `docs/FIFA_SoccerBot_FMS_Handoff_v4_65.pdf` | Formal handoff manual for v4.65: pin maps, state machine, scoring logic, LED map, event-day checklist, troubleshooting guide |
+| `FIFA_SoccerBot_FMS_Handoff_v4_65.pdf` | Formal handoff manual for v4.65: pin maps, state machine, scoring logic, LED map, event-day checklist, troubleshooting guide |
 
 ## Engineering notes
 
